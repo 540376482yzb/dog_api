@@ -1,0 +1,18 @@
+.dogs-container {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.dog-image {
+	max-width: 500px;
+	margin: 10px;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+}
+.img {
+	max-width: 500px;
+	max-height: 500px;
+}
