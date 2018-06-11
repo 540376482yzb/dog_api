@@ -11,6 +11,7 @@ export default class NavBar extends React.Component {
 		const {breeds} = this.props
 		e.preventDefault()
 		this.targetBreed = e.target.value
+		this.targetSubBeeed = ''
 		this.setState({subBreed: breeds[this.targetBreed]})
 	}
 	handleSelectSubBreed = e => {

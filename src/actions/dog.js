@@ -42,7 +42,7 @@ export const fetchRandomDog = () => {
 
 export const fetchDogByBreed = dog => {
 	const {breed, subBreed} = dog
-	const option = subBreed ? `/${subBreed}` : ''
+	const option = subBreed && subBreed !== 'all' ? `/${subBreed}` : ''
 	return fetch(`https://dog.ceo/api/breed/${breed}${option}/images`, {
 		method: 'GET'
 	})
